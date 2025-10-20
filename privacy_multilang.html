@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Privacy Policy – Digital Tasbeeh</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;padding:0;background:#f9fafb;color:#111827}
+    .container{max-width:880px;margin:40px auto;padding:20px}
+    h1{text-align:center;margin-bottom:24px}
+    nav{display:flex;justify-content:center;gap:12px;margin-bottom:24px}
+    nav button{background:#e2e8f0;border:none;padding:10px 18px;border-radius:8px;cursor:pointer;font-weight:600}
+    nav button.active{background:#16a34a;color:#fff}
+    section{display:none}
+    section.active{display:block;animation:fade .3s}
+    @keyframes fade{from{opacity:0}to{opacity:1}}
+    @media(prefers-color-scheme:dark){
+      body{background:#0f172a;color:#e2e8f0}
+      nav button{background:#1e293b;color:#cbd5e1}
+      nav button.active{background:#16a34a;color:#fff}
+    }
+  </style>
+  <script>
+    function show(lang){
+      document.querySelectorAll("section").forEach(s=>s.classList.remove("active"));
+      document.querySelectorAll("nav button").forEach(b=>b.classList.remove("active"));
+      document.getElementById(lang).classList.add("active");
+      document.getElementById(lang+"Btn").classList.add("active");
+    }
+    window.onload=()=>show('en');
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy – Digital Tasbeeh</h1>
+    <nav>
+      <button id="enBtn" onclick="show('en')">English</button>
+      <button id="frBtn" onclick="show('fr')">Français</button>
+      <button id="arBtn" onclick="show('ar')">العربية</button>
+    </nav>
+
+    <section id="en">
+      <h2>Developer: Khaled Abed</h2>
+      <p><b>Contact:</b> <a href="mailto:khaledfoll12@gmail.com">khaledfoll12@gmail.com</a></p>
+      <h3>Data Collection</h3>
+      <p>Digital Tasbeeh does not collect, store, or share any personal data. All preferences and saved adhkar remain stored locally on your device.</p>
+      <h3>Permissions</h3>
+      <ul><li><b>Vibration</b>: Used only to provide haptic feedback while counting.</li></ul>
+      <h3>Third-Party Access</h3>
+      <p>The app does not use analytics, ads, or third-party SDKs. It functions fully offline.</p>
+      <h3>Children’s Privacy</h3>
+      <p>This app is suitable for general audiences and does not target children specifically.</p>
+      <h3>Updates</h3>
+      <p>This policy may be updated to reflect improvements in the app. Any updates will be posted here.</p>
+    </section>
+
+    <section id="fr">
+      <h2>Développeur : Khaled Abed</h2>
+      <p><b>Contact :</b> <a href="mailto:khaledfoll12@gmail.com">khaledfoll12@gmail.com</a></p>
+      <h3>Collecte des données</h3>
+      <p>Chapelet numérique ne collecte, ne stocke ni ne partage aucune donnée personnelle. Les préférences et adhkar sont enregistrés localement sur votre appareil.</p>
+      <h3>Autorisations</h3>
+      <ul><li><b>Vibration</b> : utilisée uniquement pour le retour haptique pendant le comptage.</li></ul>
+      <h3>Accès de tiers</h3>
+      <p>L’application n’utilise ni analyses, ni publicités, ni SDK tiers. Elle fonctionne entièrement hors ligne.</p>
+      <h3>Confidentialité des enfants</h3>
+      <p>Cette application convient à tous les publics et ne cible pas spécifiquement les enfants.</p>
+      <h3>Mises à jour</h3>
+      <p>Cette politique peut être mise à jour pour refléter les améliorations de l’application. Toute modification sera publiée ici.</p>
+    </section>
+
+    <section id="ar" dir="rtl">
+      <h2>المطوّر: خالد عابد</h2>
+      <p><b>البريد:</b> <a href="mailto:khaledfoll12@gmail.com">khaledfoll12@gmail.com</a></p>
+      <h3>جمع البيانات</h3>
+      <p>لا يقوم تطبيق المسبحة الرقمية بجمع أو تخزين أو مشاركة أي بيانات شخصية. يتم حفظ إعدادات التطبيق والأذكار محليًا فقط على جهازك.</p>
+      <h3>الأذونات</h3>
+      <ul><li><b>الاهتزاز</b>: يُستخدم فقط لتقديم اهتزاز بسيط أثناء العد.</li></ul>
+      <h3>وصول الجهات الخارجية</h3>
+      <p>لا يستخدم التطبيق تحليلات أو إعلانات أو أدوات خارجية. يعمل دون اتصال بالإنترنت بالكامل.</p>
+      <h3>خصوصية الأطفال</h3>
+      <p>هذا التطبيق مناسب لجميع الفئات العمرية ولا يستهدف الأطفال بشكل خاص.</p>
+      <h3>التحديثات</h3>
+      <p>قد يتم تحديث هذه السياسة لتعكس تحسينات التطبيق، وسيتم نشر أي تغييرات في هذه الصفحة.</p>
+    </section>
+  </div>
+</body>
+</html>
